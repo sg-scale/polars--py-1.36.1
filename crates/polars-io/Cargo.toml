@@ -52,7 +52,7 @@ tokio = { workspace = true, features = ["fs", "net", "rt-multi-thread", "time", 
 zstd = { workspace = true, optional = true }
 
 [target.'cfg(not(target_family = "wasm"))'.dependencies]
-fs4 = { version = "0.13", features = ["sync"], optional = true }
+fs4 = { version = "1.1", features = ["sync"], optional = true }
 home = "0.5.4"
 
 [dev-dependencies]
