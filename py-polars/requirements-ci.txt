@@ -7,4 +7,4 @@ torch
 jax[cpu]
 pyiceberg>=0.7.1
 pyiceberg-core
-polars-ds==0.10.0
+polars-ds==0.14.0

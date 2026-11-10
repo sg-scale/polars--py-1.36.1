@@ -34,7 +34,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 # example: 1.35.0b1
-dependencies = ["polars-runtime-32 == 1.36.1"]
+dependencies = ["polars-runtime-32 == 2.0.0"]
 
 [project.urls]
 Homepage = "https://www.pola.rs/"
@@ -45,8 +45,8 @@ Changelog = "https://github.com/pola-rs/polars/releases"
 [project.optional-dependencies]
 # Runtimes
 # example: 1.35.0b1
-rt64 = ["polars-runtime-64 == 1.36.1"]
-rtcompat = ["polars-runtime-compat == 1.36.1"]
+rt64 = ["polars-runtime-64 == 2.0.0"]
+rtcompat = ["polars-runtime-compat == 2.0.0"]
 
 # NOTE: keep this list in sync with show_versions() and requirements-dev.txt
 polars_cloud = ["polars_cloud >= 0.4.0"]
