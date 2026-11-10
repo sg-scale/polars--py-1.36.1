@@ -18,10 +18,10 @@ pip
 polars-cloud
 # Interop
 numpy
-numba >= 0.54; python_version < '3.14'  # Numba can lag Python releases
+numba >= 0.68.1; python_version < '3.14'  # Numba can lag Python releases
 pandas
 pyarrow
-pydantic>=2.0.0
+pydantic>=2.14.3
 # Datetime / time zones
 tzdata; platform_system == 'Windows'
 # Database
@@ -42,7 +42,7 @@ s3fs
 fastexcel>=0.11.5
 openpyxl
 xlsx2csv
-xlsxwriter<=3.2.5
+xlsxwriter<=3.3.1
 # Other I/O
 deltalake>=1.1.4
 # Csv
@@ -64,13 +64,13 @@ orjson
 # TOOLING
 # -------
 
-pytest==8.3.2
-pytest-codspeed==3.2.0
-pytest-cov==6.0.0
-pytest-xdist==3.6.1
+pytest==9.2.0
+pytest-codspeed==5.0.4
+pytest-cov==7.1.0
+pytest-xdist==3.8.0
 
 # Need moto.server to mock s3fs - see: https://github.com/aio-libs/aiobotocore/issues/755
-moto[s3]==5.0.9
+moto[s3]==5.2.5
 flask
 flask-cors
 
